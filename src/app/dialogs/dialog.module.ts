@@ -9,18 +9,21 @@ import { FileUploadModule } from '../services/common/file-upload/file-upload.mod
 import { MatCardModule } from '@angular/material/card';
 import { OrderDetailDialogComponent } from './order-detail-dialog/order-detail-dialog.component';
 import { MatTableModule } from '@angular/material/table';
-import { MatToolbarModule } from '@angular/material/toolbar'; 
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { AuthorizeMenuDialogComponent } from './authorize-menu-dialog/authorize-menu-dialog/authorize-menu-dialog.component'; 
+import { MatBadgeModule } from '@angular/material/badge';
 
 
 @NgModule({
   declarations: [
     DeleteDialogComponent,
     SelectProductImageDialogComponent,
-    OrderDetailDialogComponent
+    OrderDetailDialogComponent,
+    AuthorizeMenuDialogComponent
   ],
   imports: [
     CommonModule,
-    MatDialogModule, MatButtonModule, MatCardModule, MatTableModule, MatToolbarModule,
+    MatDialogModule, MatButtonModule, MatCardModule, MatTableModule, MatToolbarModule,MatBadgeModule,
     FileUploadModule
   ]
 })
